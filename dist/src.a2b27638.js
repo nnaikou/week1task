@@ -185,8 +185,9 @@ buttonPrint.addEventListener("click", function () {
 var buttonAdd = document.getElementById("add-data");
 buttonAdd.addEventListener("click", function () {
   var list = document.getElementById("my-list");
+  var inputText = document.getElementById("area").value;
   var newItem = document.createElement("li");
-  newItem.innerText = "uusi";
+  newItem.innerText = inputText;
   list.appendChild(newItem);
 });
 },{"./styles.css":"src/styles.css"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {

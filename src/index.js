@@ -10,8 +10,10 @@ buttonPrint.addEventListener("click", function () {
 const buttonAdd = document.getElementById("add-data");
 buttonAdd.addEventListener("click", function() {
     const list = document.getElementById("my-list");
+
+    let inputText = document.getElementById("area").value
     let newItem = document.createElement("li");
-    newItem.innerText = "uusi"
+    newItem.innerText = inputText    
     list.appendChild(newItem);
     
     
