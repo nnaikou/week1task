@@ -178,7 +178,16 @@ module.hot.accept(reloadCSS);
 require("./styles.css");
 var buttonPrint = document.getElementById("my-button");
 buttonPrint.addEventListener("click", function () {
+  var text = document.getElementById("h1-text");
+  text.innerText = "My notebook";
   console.log("Hello world");
+});
+var buttonAdd = document.getElementById("add-data");
+buttonAdd.addEventListener("click", function () {
+  var list = document.getElementById("my-list");
+  var newItem = document.createElement("li");
+  newItem.innerText = "uusi";
+  list.appendChild(newItem);
 });
 },{"./styles.css":"src/styles.css"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
